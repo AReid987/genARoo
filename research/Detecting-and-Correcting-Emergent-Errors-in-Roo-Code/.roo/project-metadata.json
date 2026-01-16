@@ -1,0 +1,9 @@
+{
+  "project_name": "Detecting and Correcting Emergent Errors in Roo Code",
+  "start_date": "2025-05-19",
+  "last_updated": "2025-05-19",
+  "status": "INITIALIZING",
+  "description": "Research project focused on detecting and correcting emergent errors in Roo Code, including analysis of Boomerang tasks, mode configurations, semantic drift, error containment, correction mechanisms, community integration, and human oversight.",
+  "traceability_rules_version": "1.0",
+  "main_research_document_link": "README.md"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@xprt/api",
+  "version": "0.0.0",
+  "description": "FastAPI application for Roo Code persistence layer",
+  "scripts": {
+    "dev": "pdm run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "start": "pdm run uvicorn app.main:app --host 0.0.0.0 --port 8000",
+    "test": "pdm run pytest",
+    "test:coverage": "pdm run pytest --cov=app --cov-report=html --cov-report=term",
+    "lint": "pdm run black . && pdm run isort . && pdm run flake8 .",
+    "type-check": "pdm run mypy app",
+    "init-db": "pdm run python -c 'from app.database import init_db; init_db()'",
+    "reset-db": "pdm run python -c 'from app.database import reset_db; reset_db()'"
+  }
+}

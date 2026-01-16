@@ -1,0 +1,28 @@
+{
+  "name": "@xprt/roo-persistence",
+  "version": "0.0.0",
+  "private": true,
+  "description": "FastAPI Database Persistence Layer for Roo Code",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:api": "turbo dev --filter=@xprt/api",
+    "start:api": "turbo start --filter=@xprt/api",
+    "test": "turbo test",
+    "test:api": "turbo test --filter=@xprt/api",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "db:init": "pdm run --project apps/api init-db",
+    "db:reset": "pdm run --project apps/api reset-db",
+    "db:migrate": "pdm run --project apps/api migrate"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
